@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15pt;
+}
+
+#shell {
+  font-family: 'Fira Code', monospace;
+  background-color: black;
+  color: var(--text-color);
+  height: 100vh;
+  width: 100%;
+  padding: 7px;
+  font-size: 12pt;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#shell * {
+  font-size: 12pt;
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+#shell .line {
+  display: flex;
+  color: var(--text-color);
+  width: 100%;
+  overflow: auto;
+  max-width: 100%;
+}
+#shell .line .command {
+  display: block;
+  margin-left: 7px;
+  border: none;
+  color: white;
+  font-family: 'Fira Code', monospace;
+  background-color: transparent;
+  color: var(--text-color);
+  outline: none;
+  overflow-x: scroll;
+}
